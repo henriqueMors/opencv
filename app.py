@@ -6,4 +6,4 @@ def principal():
     st.subheader("Esse aplicativo permite integrar processamento de imagens com OpenCV")
     st.text("Streamlit com OpenCV para processamento de imagens em tempo real.")
 
-    img = cv2.imread("images/streamlit.png")
+    img = cv2.imread("images/vicecity.jpg")
