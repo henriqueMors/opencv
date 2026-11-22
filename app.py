@@ -10,7 +10,13 @@ def principal():
     #img = cv2.imread("images/docdoom.jpg")
     #img = cv2.imread("images/gtavi.jpg")
     #img = cv2.imread("images/vicecity.jpg")
+
     arquivo_imagem = st.file_uploader("Escolha uma imagem", type=["jpg", "jpeg", "png"])
+    
+    taxa_borrao = st.sidebar.slider("Taxa de borrão", min_value=1, max_value=20, value=5)
+    quantidade_brilho = st.sidebar.slider("Quantidade de brilho", min_value=0, max_value=100, value=50)
+    filtro_aprimorado = st.sidebar.checkbox("Aplicar filtro aprimorado")
+    
 
     if not arquivo_imagem:
         st.warning("Por favor, faça o upload de uma imagem para continuar.")
