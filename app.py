@@ -12,6 +12,5 @@ def principal():
         processada = aplicar_filtros(imagem, ajustes)
         mostrar_comparacao(original, processada)
 
-
 if __name__ == "__main__":
     principal()
